@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Întrebare misterioasă</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Courier New', monospace;
+      background: linear-gradient(-45deg, #6a0dad, #9b59b6, #8e44ad, #7d3c98);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .question-container {
+      max-width: 90%;
+      text-align: center;
+    }
+
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      border-right: .15em solid white;
+      white-space: nowrap;
+      font-size: 2em;
+      animation: typing 1s steps(40, end) forwards;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    .buttons {
+      margin-top: 50px;
+      display: flex;
+      gap: 30px;
+    }
+
+    .btn {
+      padding: 15px 40px;
+      font-size: 1.1em;
+      background-color: rgba(255, 255, 255, 0.15);
+      color: white;
+      border: 2px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: #6a0dad;
+      transform: scale(1.08);
+      box-shadow: 0 0 20px white;
+    }
+  </style>
+</head>
+<body>
+  <div class="question-container">
+    <div class="typewriter">Înghețată cândva?</div>
+  </div>
+
+  <div class="buttons">
+    <button class="btn" onclick="window.location.href='https://www.berlin.de/en/news/9550225-5559700-number-of-criminal-offences-increased-in.en.html?utm_source=chatgpt.com'">Da</button>
+    <button class="btn" onclick="window.location.href='file:///C:/Users/vlada/Downloads/!DOCTY3.html'">Nu</button>
+  </div>
+</body>
+</html>
